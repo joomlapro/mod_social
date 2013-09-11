@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>mod_social</name>
+	<author>Bruno Batista</author>
+	<creationDate>Sep 2013</creationDate>
+	<copyright>Copyright (C) 2013 AtomTech IT Services. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>bruno@atomtech.com.br</authorEmail>
+	<authorUrl>http://www.atomtech.com.br</authorUrl>
+	<version>1.0</version>
+	<description>MOD_SOCIAL_XML_DESCRIPTION</description>
+	<scriptfile />
+	<files>
+		<filename module="mod_social">mod_social.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_social.xml</filename>
+		<folder>tmpl</folder>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.mod_social.ini</language>
+		<language tag="en-GB">en-GB/en-GB.mod_social.sys.ini</language>
+		<language tag="es-ES">es-ES/es-ES.mod_social.ini</language>
+		<language tag="es-ES">es-ES/es-ES.mod_social.sys.ini</language>
+		<language tag="pt-BR">pt-BR/pt-BR.mod_social.ini</language>
+		<language tag="pt-BR">pt-BR/pt-BR.mod_social.sys.ini</language>
+	</languages>
+	<config>
+		<fields
+			name="params">
+			<fieldset
+				name="basic">
+				<field
+					name="twitter_username"
+					type="text"
+					size="40"
+					class="inputbox"
+					label="MOD_SOCIAL_FIELD_TWITTER_USERNAME_LABEL"
+					description="MOD_SOCIAL_FIELD_TWITTER_USERNAME_DESC" />
+				<field
+					name="facebook_username"
+					type="text"
+					size="40"
+					class="inputbox"
+					label="MOD_SOCIAL_FIELD_FACEBOOK_USERNAME_LABEL"
+					description="MOD_SOCIAL_FIELD_FACEBOOK_USERNAME_DESC" />
+				<field
+					name="rss_url"
+					type="text"
+					size="40"
+					class="inputbox"
+					label="MOD_SOCIAL_FIELD_RSS_URL_LABEL"
+					description="MOD_SOCIAL_FIELD_RSS_URL_DESC" />
+			</fieldset>
+			<fieldset
+				name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="itemid">
+					<option value="itemid" />
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
