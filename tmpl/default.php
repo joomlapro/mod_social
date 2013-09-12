@@ -12,7 +12,7 @@
 defined('_JEXEC') or die;
 
 // Load the tooltip bootstrap script.
-JHtml::_('bootstrap.tooltip', '.list-social a', array('placement' => 'top'));
+JHtml::_('bootstrap.tooltip', '.list-social a', array('placement' => $direction));
 ?>
 <ul class="list-unstyled list-social<?php echo $moduleclass_sfx; ?>">
 	<?php if ($twitterUsername): ?>

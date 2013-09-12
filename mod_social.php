@@ -16,6 +16,7 @@ $moduleclass_sfx  = htmlspecialchars($params->get('moduleclass_sfx'));
 $twitterUsername  = htmlspecialchars($params->get('twitter_username'));
 $facebookUsername = htmlspecialchars($params->get('facebook_username'));
 $rssUrl           = htmlspecialchars($params->get('rss_url', JRoute::_('&format=feed&type=rss', false)));
+$direction        = (string) $params->get('direction', 'top');
 
 // Render the module.
 require JModuleHelper::getLayoutPath('mod_social', $params->get('layout', 'default'));
