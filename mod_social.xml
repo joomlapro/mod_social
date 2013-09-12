@@ -50,6 +50,25 @@
 					class="inputbox"
 					label="MOD_SOCIAL_FIELD_RSS_URL_LABEL"
 					description="MOD_SOCIAL_FIELD_RSS_URL_DESC" />
+				<field
+					name="spacer1"
+					type="spacer"
+					class="text"
+					hr="true"
+					label="MOD_SOCIAL_FIELD_SPACER1_LABEL" />
+				<field
+					name="direction"
+					type="list"
+					default="top"
+					class="inputbox"
+					filter="string"
+					label="MOD_SOCIAL_FIELD_DIRECTION_LABEL"
+					description="MOD_SOCIAL_FIELD_DIRECTION_DESC">
+					<option value="left">MOD_SOCIAL_OPTION_TOOLTIP_LEFT</option>
+					<option value="top">MOD_SOCIAL_OPTION_TOOLTIP_TOP</option>
+					<option value="bottom">MOD_SOCIAL_OPTION_TOOLTIP_BOTTOM</option>
+					<option value="right">MOD_SOCIAL_OPTION_TOOLTIP_RIGHT</option>
+				</field>
 			</fieldset>
 			<fieldset
 				name="advanced">
